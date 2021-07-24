@@ -1,0 +1,58 @@
+<html>
+ <head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+ </head>
+  <body>
+
+    <div id="signup_div" class="signmain-div">
+        <h3>Firebase Web Signup </h3>
+        <input type="email" placeholder="Email" id="email_field" />
+        <input type="password" placeholder="Password" id="password_field" />
+
+        <button onclick="signup()">Signup</button>
+        <br>
+        <button onclick="soLogin()">Go To Login Page</button>
+    </div>
+
+    <div id="login_div" class="main-div">
+        <h3>Firebase Web Login</h3>
+        <input type="email" placeholder="Email" id="email_field1" />
+        <input type="password" placeholder="Password" id="password_field1" />
+    
+        <button onclick="login()">Login</button>
+        <br>
+        <button onclick="soSignup()">Go To Signup Page</button>
+    </div>
+
+    <div id="user_div" class="loggedin-div">
+        <h3>Welcome User</h3>
+        <p id="user_para">Login successfully. Welcome user</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+    <script>
+      // Initialize Firebase
+      var firebaseConfig = {
+    apiKey: "AIzaSyBuE4jAyZ5xnhZ8AFCkH--wmyLXWrArRCI",
+    authDomain: "testingfirebasecode.firebaseapp.com",
+    projectId: "testingfirebasecode",
+    storageBucket: "testingfirebasecode.appspot.com",
+    messagingSenderId: "100823524691",
+    appId: "1:100823524691:web:fa902d668ab48a886cada6",
+    measurementId: "G-FJ6GFDV0J6"
+    };
+      firebase.initializeApp(firebaseConfig);
+
+
+    </script>
+
+    
+    <script src="main.js"></script>
+  
+  </body>
+</html>
+  
